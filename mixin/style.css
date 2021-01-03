@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header h2 {
+  padding: 2rem;
+  font-size: 4rem;
+}
+header a {
+  text-decoration: none;
+  color: rgb(17, 37, 75);
+}
+form {
+  display: flex;
+  padding: 2rem;
+}
+#search-input {
+  padding: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  border: 2px solid rgb(93, 43, 139);
+  color: rgb(92, 50, 131);
+  text-transform: capitalize;
+}
+.sumbit-btn {
+  padding: 1rem;
+  font-size: 1.7rem;
+  border: none;
+  color: aqua;
+  background: rgb(93, 43, 139);
+  cursor: pointer;
+}
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.gallery-info a {
+  color: gray;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto;
+  row-gap: 7rem;
+  column-gap: 4rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more {
+  padding: 1.5rem 3.5rem;
+  font-size: 2.7rem;
+  background: transparent;
+  color: rgb(26, 23, 71);
+  border: 0.2rem solid rgb(26, 23, 71);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.more:hover {
+  background: rgb(26, 23, 71);
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  header h2 {
+    font-size: 3rem;
+  }
+  form {
+    padding: 1rem 0rem;
+  }
+  #search-input {
+    width: 70%;
+    margin-left: auto;
+  }
+  .sumbit-btn {
+    margin-right: auto;
+  }
+  .gallery {
+    padding: 0;
+    width: 95%;
+  }
+}
